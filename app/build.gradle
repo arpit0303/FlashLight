@@ -8,13 +8,14 @@ android {
         applicationId "com.aasa.flashlight"
         minSdkVersion 9
         targetSdkVersion 22
-        versionCode 4
-        versionName "1.0.2"
+        versionCode 5
+        versionName "1.0.3"
     }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
